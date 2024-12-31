@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Landing Page</h1>
+      </header>
+      <main>
+        <button onclick="alert('Welcome to My Landing Page!')">Show Welcome Message</button>
+        <button onclick="personalizedGreeting()">Personalized Greeting</button>
+        <button onclick="alert('My name is Maham Khan. My favorite hobby is reading.')">About Me</button>
+      </main>
+      <footer>
+        <p>&copy; 2024 Maham Khan. All rights reserved.</p>
+      </footer>
+    
+      <script>
+        // Function for Personalized Greeting
+        function personalizedGreeting() {
+          const name = prompt("What is your name?");
+          if (name) {
+            alert(`Hello, ${name}!`);
+          } else {
+            alert("Hello, Guest!");
+          }
+        }
+      </script>
+</body>
+</html>
